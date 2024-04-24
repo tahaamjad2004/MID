@@ -1,0 +1,11 @@
+
+def reverse(string):
+    
+    if len(string) < 1:
+        return string
+    else:
+        return string[-1] + reverse(string[:-1])
+
+my_string=input("Enter your string :")
+reversed_string=reverse(my_string)
+print(reversed_string)
